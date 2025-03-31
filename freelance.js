@@ -1,3 +1,9 @@
+class freelancer {
+  constructor(name, price, occupation) {
+    (name = this.name), (price = this.price), (occupation = this.occupation);
+  }
+}
+
 const freelancers = [
   { name: "Dr. Slice", price: 25, occupation: "gardener" },
   { name: "Dr. Pressure", price: 51, occupation: "programmer" },
