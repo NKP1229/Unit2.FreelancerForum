@@ -14,3 +14,14 @@ const freelancers = [
   { name: "Dr. Wire", price: 47, occupation: "teacher" },
   { name: "Prof. Goose", price: 72, occupation: "driver" },
 ];
+
+document.addEventListener("DOMContentLoaded", function () {
+  for (let i = 0; i < 5; i++) {
+    const Name = document.getElementById(`n${i}`);
+    const Occupation = document.getElementById(`o${i}`);
+    const Price = document.getElementById(`p${i}`);
+    Name.textContent = `${freelancers[i].name}`;
+    Occupation.textContent = `${freelancers[i].occupation}`;
+    Price.textContent = `${freelancers[i].price}`;
+  }
+});
